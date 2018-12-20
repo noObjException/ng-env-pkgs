@@ -1,5 +1,5 @@
 # STEP 1: Build
-FROM node:alpine as builder
+FROM node:alpine
 
 LABEL authors="zhuwj"
 
