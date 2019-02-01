@@ -155,3 +155,5 @@ RUN yarn config set sass-binary-site http://npm.taobao.org/mirrors/node-sass/
 RUN yarn config set progress false
 
 RUN yarn add node-sass global
+
+FROM nginx:alpine
