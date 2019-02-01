@@ -156,4 +156,12 @@ RUN yarn config set progress false
 
 RUN yarn add node-sass global
 
-FROM nginx:alpine
+## 安装 nginx
+RUN apk update \    
+  && apk add nginx
+## 创建一个目录
+RUN mkdir /data
+## 指定命令运行的目录
+WORKDIR /data
+
+RUN yarn -v
