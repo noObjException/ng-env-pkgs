@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:10.0.0-alpine
 
 LABEL authors="zhuwj"
 
@@ -7,6 +7,6 @@ RUN yarn config set sass-binary-site http://npm.taobao.org/mirrors/node-sass/
 RUN yarn config set progress false
 
 # RUN npm i -g node-sass
-RUN npm -g @angular/cli
+RUN npm i -g @angular/cli
 
 RUN yarn -v
